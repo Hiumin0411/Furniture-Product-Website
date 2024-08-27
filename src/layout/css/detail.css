@@ -1,0 +1,68 @@
+.product-detail {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* margin-top: 20px; */
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    color: #b12704;
+    margin-bottom: 15px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn_contiu {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3B5D50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .btn_contiu:hover {
+    background-color: #658D8C;
+  }
+
+  .btn_contiu_add_to_cart {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #F9BF29;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .btn_contiu_add_to_cart:hover {
+    background-color: #eacc7f;
+  }
+  .button-group {
+    /* display: flex; */
+    display: inline-block;
+    gap: 10px; /* Khoảng cách giữa các nút, bạn có thể chỉnh sửa giá trị này theo ý muốn */
+  }
+  
+  
+  

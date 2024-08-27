@@ -1,0 +1,212 @@
+ .loginsignup * {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+/* Thêm tiền tố cho lớp container */
+.login-signup-container {
+    position: relative;
+    max-width: 100%;
+    min-height: 680px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.2),
+        0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Thêm tiền tố cho lớp overlay-container */
+.login-signup-overlay-container {
+    display: none;
+}
+
+/* Thêm tiền tố cho lớp form-container */
+.login-signup-form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.login-signup-sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.login-signup-sign-up-container {
+    right: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+/* Thêm tiền tố cho lớp form-container form */
+.login-signup-form-container form {
+    height: 100%;
+    background: #fff;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Thêm tiền tố cho lớp social-container */
+.login-signup-social-container {
+    margin: 20px 0;
+}
+
+.login-signup-social-container a {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+/* Thêm tiền tố cho lớp form-container input */
+.login-signup-form-container input {
+    width: 100%;
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+}
+
+/* Thêm tiền tố cho lớp button */
+.login-signup-button {
+    background: #ff445c;
+    color: #fff;
+    border: 1px solid #ff4b2b;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.login-signup-button:active {
+    transform: scale(0.95);
+}
+
+.login-signup-button:focus {
+    outline: none;
+}
+
+.login-signup-button.ghost {
+    background: transparent;
+    border-color: #fff;
+}
+
+/* Thêm tiền tố cho lớp sign-up-container */
+.login-signup-sign-up-container {
+    left: 0;
+    opacity: 0;
+}
+
+/* Thêm tiền tố cho lớp overlay-container */
+.login-signup-overlay-container {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Thêm tiền tố cho lớp overlay */
+.login-signup-overlay {
+    position: relative;
+    height: 100%;
+    width: 200%;
+    left: -100%;
+    background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+    color: #fff;
+    transform: translateY(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Thêm tiền tố cho lớp overlay-panel */
+.login-signup-overlay-panel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    transform: scaleY(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.login-signup-overlay-right {
+    right: 0;
+    transform: translateY(0);
+}
+
+.login-signup-overlay-left {
+    transform: translateY(-20%);
+}
+
+/* Các lớp với tiền tố cho hiệu ứng chuyển động */
+.login-signup-container.right-panel-active .login-signup-sign-in-container {
+    transform: translateY(100%);
+}
+
+.login-signup-container.right-panel-active .login-signup-overlay-container {
+    transform: translateX(-100%);
+}
+
+.login-signup-container.right-panel-active .login-signup-sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.login-signup-container.right-panel-active .login-signup-overlay {
+    transform: translateX(50%);
+}
+
+.login-signup-container.right-panel-active .login-signup-overlay-right {
+    transform: translateX(20%);
+}

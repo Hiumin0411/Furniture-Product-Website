@@ -1,0 +1,23 @@
+.quantity-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .quantity-btn.decrease {
+    border-radius: 5px 0 0 5px; /* Rounded left corners */
+  }
+  
+  .quantity-btn.increase {
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+  }
+  
+  .quantity {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  

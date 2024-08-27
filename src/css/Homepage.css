@@ -1,0 +1,124 @@
+/* Container and row styling */
+.stat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .stat-cards-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Icon styling */
+  .stat-cards-icon {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .stat-cards-icon.primary {
+    background: #658D8C;
+    color: #fff;
+  }
+  
+  .stat-cards-icon.warning {
+    background: #658D8C;
+    color: #fff;
+  }
+  
+  .stat-cards-icon.purple {
+    background: #658D8C;
+    color: #fff;
+  }
+  
+  .stat-cards-icon.success {
+    background: #658D8C;
+    color: #fff;
+  }
+  
+  /* Info styling */
+  .stat-cards-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-cards-info__num {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .stat-cards-info__title {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .stat-cards-info__progress {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .stat-cards-info__profit {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .stat-cards-info__profit.success {
+    color: #28a745;
+  }
+  
+  .stat-cards-info__profit.danger {
+    color: #dc3545;
+  }
+  
+  .stat-cards-info__profit.warning {
+    color: #ffc107;
+  }
+  
+  /* Feather icon adjustments */
+  .stat-cards-icon i,
+  .stat-cards-info__profit i {
+    margin-right: 5px;
+  }
+  /* Định dạng cho cột sản phẩm */
+.col-12.col-md-4.col-lg-3 {
+  position: relative; /* Để button có thể căn chỉnh tuyệt đối bên trong cột */
+}
+
+/* Định dạng cho button */
+.icon-cross {
+  position: absolute; /* Đặt vị trí của button tuyệt đối */
+  top: 90%; /* Khoảng cách từ trên cùng của cột (có thể điều chỉnh) */
+  right: 40%; /* Khoảng cách từ bên phải của cột (có thể điều chỉnh) */
+  width: 40px; /* Đặt kích thước vòng tròn */
+  height: 40px; /* Đặt kích thước vòng tròn */
+  border-radius: 50%; /* Bọc trong ô tròn */
+  background-color: #000; /* Màu nền đen */
+  display: flex; /* Căn giữa nội dung bên trong */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  border: none; /* Loại bỏ đường viền của button */
+  padding: 0; /* Loại bỏ padding */
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+
+/* Định dạng cho hình ảnh trong button */
+.icon-cross img {
+  width: 60%; /* Điều chỉnh kích thước hình ảnh */
+  height: 60%; /* Điều chỉnh kích thước hình ảnh */
+}
